@@ -1,0 +1,231 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #404040;
+    width: 100%;
+    
+
+}
+
+a {
+    text-decoration: none;
+    color: darkorange;
+    text-shadow: 0 1px 0px black;
+}
+
+a:hover {
+    color: dodgerblue;
+
+}
+
+h1 {
+    margin: auto;
+    font-size: 50px;
+    font-family: serif;
+    font-weight: bold;
+    color: darkorange;
+    letter-spacing: 2px;
+    text-shadow: 0 3px 10px black;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #444;
+    border-bottom: 4px dotted orange;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 23px;
+    font-weight: bold;
+    color: #444;
+    margin: 15px 0px;
+}
+
+h3::before {
+    content: "";
+    width: 5px;
+    height: auto;
+    border: 5px solid darkorange;
+    margin-right: 10px;
+
+}
+
+body {
+    height: auto;
+    background-color: cornsilk;
+    font-size: 18px;
+
+
+}
+
+main {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top:30px;
+}
+
+.logo {
+    margin-left: 10%;
+    animation-name: rotor;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-out;
+}
+
+@keyframes rotor {
+
+    50% {
+        transform: scale(1.3) rotate(180deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+
+}
+
+.start {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 20px;
+    text-align: justify;
+    font-size: 18px;
+    background: linear-gradient(transparent 10%, rgba(255, 165, 0, 0.3), transparent 100%);
+    line-height: 30px;
+    font-weight: bold;
+}
+
+main > * {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    padding: 20px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+
+cite {
+    font-style: italic;
+}
+
+.top {
+    width: 0;
+    height: 0;
+    display: block;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    transform: rotate(-45deg);
+
+}
+
+.top::before {
+    border: 40px solid transparent;
+    content: "";
+    border-top-color: darkorange;
+    border-bottom: 0;
+
+}
+
+.expressmenu {
+    display: block;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 30px;
+    padding: 10px;
+
+}
+
+.expressmenu > a:first-of-type {
+    color: firebrick;
+    text-decoration: none;
+    font-size: 30px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    border-bottom: 3px solid transparent;
+
+}
+
+.expressmenu > a:last-of-type {
+    color: forestgreen;
+    text-decoration: none;
+    font-size: 30px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    border-bottom: 3px solid transparent;
+}
+
+.expressmenu > a:first-of-type:hover {
+    color: olivedrab;
+    transition-property: all;
+    transition-duration: 0.5s;
+    border-bottom: 3px solid olivedrab;
+
+}
+
+.expressmenu > a:last-of-type:hover {
+    color: darkred;
+    transition-property: all;
+    transition-duration: 0.5s;
+    border-bottom: 3px solid darkred;
+
+}
+
+.selectors > p,
+.properties > p,
+.prepropcessors > p {
+    padding: 10px;
+    font-size: 18px;
+    word-spacing: 8px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-indent: 10px;
+
+}
+
+ul {
+    padding: 10px;
+    font-size: 20px;
+    word-spacing: 8px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-indent: 10px;
+    list-style-type: disc;
+    list-style-position: inside;
+
+}
+
+
+
+.selectors > p::first-letter,
+.properties > p::first-letter,
+.prepropcessors > p::first-letter {
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+
+}
+
+footer {
+    height: 10%;
+    background-color: #333;
+}
+
+footer p {
+    vertical-align: middle;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 3%;
+    font-family: monospace;
+    font-size: 15px
+}
